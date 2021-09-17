@@ -12,6 +12,10 @@ func (e *PG_E01780002) Message() string {
 	return "有効性チェック有無が不正です。"
 }
 
+func (e *PG_E01780002) Code() string {
+	return "E01780002"
+}
+
 func (e *PG_E01780002) CanRetry() bool {
 	return false
 }

@@ -12,6 +12,10 @@ func (e *PG_E01170011) Message() string {
 	return "カード番号が10桁~16桁の範囲ではありません。"
 }
 
+func (e *PG_E01170011) Code() string {
+	return "E01170011"
+}
+
 func (e *PG_E01170011) CanRetry() bool {
 	return false
 }

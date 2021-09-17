@@ -12,6 +12,10 @@ func (e *PG_E01670013) Message() string {
 	return "出力エンコーディングにサポートされない値が設定されています。"
 }
 
+func (e *PG_E01670013) Code() string {
+	return "E01670013"
+}
+
 func (e *PG_E01670013) CanRetry() bool {
 	return false
 }

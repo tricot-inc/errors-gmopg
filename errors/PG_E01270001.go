@@ -12,6 +12,10 @@ func (e *PG_E01270001) Message() string {
 	return "支払回数が指定されていません。"
 }
 
+func (e *PG_E01270001) Code() string {
+	return "E01270001"
+}
+
 func (e *PG_E01270001) CanRetry() bool {
 	return false
 }

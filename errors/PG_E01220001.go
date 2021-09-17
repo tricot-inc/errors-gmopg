@@ -12,6 +12,10 @@ func (e *PG_E01220001) Message() string {
 	return "会員IDが指定されていません。"
 }
 
+func (e *PG_E01220001) Code() string {
+	return "E01220001"
+}
+
 func (e *PG_E01220001) CanRetry() bool {
 	return false
 }

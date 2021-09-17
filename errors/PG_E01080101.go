@@ -12,6 +12,10 @@ func (e *PG_E01080101) Message() string {
 	return "3D必須店舗にも関わらず3Dセキュア使用フラグがOFFになっています。"
 }
 
+func (e *PG_E01080101) Code() string {
+	return "E01080101"
+}
+
 func (e *PG_E01080101) CanRetry() bool {
 	return false
 }

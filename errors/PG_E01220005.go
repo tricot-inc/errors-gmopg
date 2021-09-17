@@ -12,6 +12,10 @@ func (e *PG_E01220005) Message() string {
 	return "会員IDが最大桁数を超えています。"
 }
 
+func (e *PG_E01220005) Code() string {
+	return "E01220005"
+}
+
 func (e *PG_E01220005) CanRetry() bool {
 	return false
 }

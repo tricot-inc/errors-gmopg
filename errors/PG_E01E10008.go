@@ -12,6 +12,10 @@ func (e *PG_E01E10008) Message() string {
 	return "継続課金の期限の書式が正しくありません。"
 }
 
+func (e *PG_E01E10008) Code() string {
+	return "E01E10008"
+}
+
 func (e *PG_E01E10008) CanRetry() bool {
 	return false
 }

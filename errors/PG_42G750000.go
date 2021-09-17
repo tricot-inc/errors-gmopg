@@ -12,6 +12,10 @@ func (e *PG_42G750000) Message() string {
 	return "分割金額に誤りがあるために、決済を完了する事ができませんでした。"
 }
 
+func (e *PG_42G750000) Code() string {
+	return "42G750000"
+}
+
 func (e *PG_42G750000) CanRetry() bool {
 	return false
 }

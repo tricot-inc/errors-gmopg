@@ -12,6 +12,10 @@ func (e *PG_E01D90008) Message() string {
 	return "商品の注文情報の書式が正しくありません。"
 }
 
+func (e *PG_E01D90008) Code() string {
+	return "E01D90008"
+}
+
 func (e *PG_E01D90008) CanRetry() bool {
 	return false
 }

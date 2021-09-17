@@ -12,6 +12,10 @@ func (e *PG_E01510005) Message() string {
 	return "購買情報文字列の文字数が間違っています。"
 }
 
+func (e *PG_E01510005) Code() string {
+	return "E01510005"
+}
+
 func (e *PG_E01510005) CanRetry() bool {
 	return false
 }

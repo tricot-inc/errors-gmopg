@@ -12,6 +12,10 @@ func (e *PG_E11010003) Message() string {
 	return "この取引は指定処理区分処理を行う事ができません。"
 }
 
+func (e *PG_E11010003) Code() string {
+	return "E11010003"
+}
+
 func (e *PG_E11010003) CanRetry() bool {
 	return false
 }

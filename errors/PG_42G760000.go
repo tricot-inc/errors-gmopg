@@ -12,6 +12,10 @@ func (e *PG_42G760000) Message() string {
 	return "初回金額に誤りがあるために、決済を完了する事ができませんでした。"
 }
 
+func (e *PG_42G760000) Code() string {
+	return "42G760000"
+}
+
 func (e *PG_42G760000) CanRetry() bool {
 	return false
 }

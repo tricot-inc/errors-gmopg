@@ -12,6 +12,10 @@ func (e *PG_E01A40008) Message() string {
 	return "カード会員の不審行為情報の書式が正しくありません。"
 }
 
+func (e *PG_E01A40008) Code() string {
+	return "E01A40008"
+}
+
 func (e *PG_E01A40008) CanRetry() bool {
 	return false
 }

@@ -12,6 +12,10 @@ func (e *PG_E01520002) Message() string {
 	return "ユーザー利用端末情報に無効な値が設定されています。"
 }
 
+func (e *PG_E01520002) Code() string {
+	return "E01520002"
+}
+
 func (e *PG_E01520002) CanRetry() bool {
 	return false
 }

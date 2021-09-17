@@ -12,6 +12,10 @@ func (e *PG_E01B70010) Message() string {
 	return "請求先住所の州または都道府県番号を指定する場合は請求先住所の国番号を省略できません。"
 }
 
+func (e *PG_E01B70010) Code() string {
+	return "E01B70010"
+}
+
 func (e *PG_E01B70010) CanRetry() bool {
 	return false
 }

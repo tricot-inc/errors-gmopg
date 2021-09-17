@@ -12,6 +12,10 @@ func (e *PG_E01800050) Message() string {
 	return "暗証番号が不正です。(0000は使用できません)"
 }
 
+func (e *PG_E01800050) Code() string {
+	return "E01800050"
+}
+
 func (e *PG_E01800050) CanRetry() bool {
 	return false
 }

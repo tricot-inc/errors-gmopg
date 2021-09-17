@@ -12,6 +12,10 @@ func (e *PG_E01610005) Message() string {
 	return "リトライ回数が0~99の範囲外です。"
 }
 
+func (e *PG_E01610005) Code() string {
+	return "E01610005"
+}
+
 func (e *PG_E01610005) CanRetry() bool {
 	return false
 }

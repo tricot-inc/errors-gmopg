@@ -12,6 +12,10 @@ func (e *PG_E01410010) Message() string {
 	return "該当取引は操作禁止状態です。"
 }
 
+func (e *PG_E01410010) Code() string {
+	return "E01410010"
+}
+
 func (e *PG_E01410010) CanRetry() bool {
 	return false
 }

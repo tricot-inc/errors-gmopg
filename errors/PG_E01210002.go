@@ -12,6 +12,10 @@ func (e *PG_E01210002) Message() string {
 	return "指定されたIDとパスワードのサイトが存在しません。"
 }
 
+func (e *PG_E01210002) Code() string {
+	return "E01210002"
+}
+
 func (e *PG_E01210002) CanRetry() bool {
 	return false
 }

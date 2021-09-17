@@ -12,6 +12,10 @@ func (e *PG_E01160001) Message() string {
 	return "ボーナス分割回数が指定されていません。"
 }
 
+func (e *PG_E01160001) Code() string {
+	return "E01160001"
+}
+
 func (e *PG_E01160001) CanRetry() bool {
 	return false
 }

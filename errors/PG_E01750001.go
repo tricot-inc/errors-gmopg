@@ -12,6 +12,10 @@ func (e *PG_E01750001) Message() string {
 	return "利用日が指定されていません。"
 }
 
+func (e *PG_E01750001) Code() string {
+	return "E01750001"
+}
+
 func (e *PG_E01750001) CanRetry() bool {
 	return false
 }

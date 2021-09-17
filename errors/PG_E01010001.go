@@ -12,6 +12,10 @@ func (e *PG_E01010001) Message() string {
 	return "ショップIDが指定されていません。"
 }
 
+func (e *PG_E01010001) Code() string {
+	return "E01010001"
+}
+
 func (e *PG_E01010001) CanRetry() bool {
 	return false
 }

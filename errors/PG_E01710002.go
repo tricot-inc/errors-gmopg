@@ -12,6 +12,10 @@ func (e *PG_E01710002) Message() string {
 	return "指定された取引区分が存在しません。"
 }
 
+func (e *PG_E01710002) Code() string {
+	return "E01710002"
+}
+
 func (e *PG_E01710002) CanRetry() bool {
 	return false
 }

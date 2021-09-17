@@ -12,6 +12,10 @@ func (e *PG_E01B80005) Message() string {
 	return "カード会員のメールアドレスが最大桁数を超えています。"
 }
 
+func (e *PG_E01B80005) Code() string {
+	return "E01B80005"
+}
+
 func (e *PG_E01B80005) CanRetry() bool {
 	return false
 }

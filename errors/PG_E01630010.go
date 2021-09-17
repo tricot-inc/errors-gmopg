@@ -12,6 +12,10 @@ func (e *PG_E01630010) Message() string {
 	return "取引後カード登録時、取引の会員IDとパラメータの会員IDが一致しません。"
 }
 
+func (e *PG_E01630010) Code() string {
+	return "E01630010"
+}
+
 func (e *PG_E01630010) CanRetry() bool {
 	return false
 }

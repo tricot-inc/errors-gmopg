@@ -12,6 +12,10 @@ func (e *PG_E01D60005) Message() string {
 	return "購入されたプリペイドカードまたはギフトカードの通貨コードが3桁ではありません。"
 }
 
+func (e *PG_E01D60005) Code() string {
+	return "E01D60005"
+}
+
 func (e *PG_E01D60005) CanRetry() bool {
 	return false
 }

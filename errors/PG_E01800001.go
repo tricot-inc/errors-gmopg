@@ -12,6 +12,10 @@ func (e *PG_E01800001) Message() string {
 	return "暗証番号が未入力です。"
 }
 
+func (e *PG_E01800001) Code() string {
+	return "E01800001"
+}
+
 func (e *PG_E01800001) CanRetry() bool {
 	return false
 }

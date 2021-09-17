@@ -12,6 +12,10 @@ func (e *PG_E11010013) Message() string {
 	return "180日超えの取引のため、処理を行う事ができません。"
 }
 
+func (e *PG_E11010013) Code() string {
+	return "E11010013"
+}
+
 func (e *PG_E11010013) CanRetry() bool {
 	return false
 }

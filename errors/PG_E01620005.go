@@ -12,6 +12,10 @@ func (e *PG_E01620005) Message() string {
 	return "セッションタイムアウト値が0~9999の範囲外です。"
 }
 
+func (e *PG_E01620005) Code() string {
+	return "E01620005"
+}
+
 func (e *PG_E01620005) CanRetry() bool {
 	return false
 }

@@ -12,6 +12,10 @@ func (e *PG_E01040010) Message() string {
 	return "すでにオーダーIDが存在しています。"
 }
 
+func (e *PG_E01040010) Code() string {
+	return "E01040010"
+}
+
 func (e *PG_E01040010) CanRetry() bool {
 	return false
 }

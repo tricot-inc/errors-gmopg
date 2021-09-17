@@ -12,6 +12,10 @@ func (e *PG_E01A10006) Message() string {
 	return "過去24時間のカード追加の試行回数に数字以外の文字が含まれています。"
 }
 
+func (e *PG_E01A10006) Code() string {
+	return "E01A10006"
+}
+
 func (e *PG_E01A10006) CanRetry() bool {
 	return false
 }

@@ -12,6 +12,10 @@ func (e *PG_E01E40001) Message() string {
 	return "認証状態が指定されていません。"
 }
 
+func (e *PG_E01E40001) Code() string {
+	return "E01E40001"
+}
+
 func (e *PG_E01E40001) CanRetry() bool {
 	return false
 }

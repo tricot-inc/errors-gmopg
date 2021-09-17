@@ -12,6 +12,10 @@ func (e *PG_E01600001) Message() string {
 	return "会員情報チェック文字列が設定されていません。"
 }
 
+func (e *PG_E01600001) Code() string {
+	return "E01600001"
+}
+
 func (e *PG_E01600001) CanRetry() bool {
 	return false
 }

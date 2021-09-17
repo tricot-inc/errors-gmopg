@@ -12,6 +12,10 @@ func (e *PG_E01300001) Message() string {
 	return "HTTP_USER_AGENTが指定されていません。"
 }
 
+func (e *PG_E01300001) Code() string {
+	return "E01300001"
+}
+
 func (e *PG_E01300001) CanRetry() bool {
 	return false
 }

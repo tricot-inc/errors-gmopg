@@ -12,6 +12,10 @@ func (e *PG_E01080010) Message() string {
 	return "3Dセキュア利用しない契約ですが、3Dセキュア使用フラグ(TdFlag)が指定されています。"
 }
 
+func (e *PG_E01080010) Code() string {
+	return "E01080010"
+}
+
 func (e *PG_E01080010) CanRetry() bool {
 	return false
 }

@@ -12,6 +12,10 @@ func (e *PG_E01A30008) Message() string {
 	return "カード会員名と配送先名の一致/不一致の書式が正しくありません。"
 }
 
+func (e *PG_E01A30008) Code() string {
+	return "E01A30008"
+}
+
 func (e *PG_E01A30008) CanRetry() bool {
 	return false
 }

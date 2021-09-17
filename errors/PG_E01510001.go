@@ -12,6 +12,10 @@ func (e *PG_E01510001) Message() string {
 	return "購買情報文字列が設定されていません。"
 }
 
+func (e *PG_E01510001) Code() string {
+	return "E01510001"
+}
+
 func (e *PG_E01510001) CanRetry() bool {
 	return false
 }

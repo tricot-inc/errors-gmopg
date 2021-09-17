@@ -12,6 +12,10 @@ func (e *PG_E01740005) Message() string {
 	return "端末処理通番が最大桁数を超えています。"
 }
 
+func (e *PG_E01740005) Code() string {
+	return "E01740005"
+}
+
 func (e *PG_E01740005) CanRetry() bool {
 	return false
 }

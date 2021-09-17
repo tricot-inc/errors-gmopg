@@ -12,6 +12,10 @@ func (e *PG_E01470008) Message() string {
 	return "カード登録連番モードの書式が正しくありません。"
 }
 
+func (e *PG_E01470008) Code() string {
+	return "E01470008"
+}
+
 func (e *PG_E01470008) CanRetry() bool {
 	return false
 }

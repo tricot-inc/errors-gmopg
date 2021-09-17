@@ -12,6 +12,10 @@ func (e *PG_E01250008) Message() string {
 	return "カードパスワードの書式が正しくありません。"
 }
 
+func (e *PG_E01250008) Code() string {
+	return "E01250008"
+}
+
 func (e *PG_E01250008) CanRetry() bool {
 	return false
 }

@@ -12,6 +12,10 @@ func (e *PG_E01600005) Message() string {
 	return "会員情報チェック文字列が最大文字数を超えています。"
 }
 
+func (e *PG_E01600005) Code() string {
+	return "E01600005"
+}
+
 func (e *PG_E01600005) CanRetry() bool {
 	return false
 }

@@ -12,6 +12,10 @@ func (e *PG_E11010002) Message() string {
 	return "この取引は決済が終了していませんので、変更する事ができません。"
 }
 
+func (e *PG_E11010002) Code() string {
+	return "E11010002"
+}
+
 func (e *PG_E11010002) CanRetry() bool {
 	return false
 }

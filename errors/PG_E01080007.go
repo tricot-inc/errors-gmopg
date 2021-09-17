@@ -12,6 +12,10 @@ func (e *PG_E01080007) Message() string {
 	return "3Dセキュア使用フラグに0,1以外の値が指定されています。"
 }
 
+func (e *PG_E01080007) Code() string {
+	return "E01080007"
+}
+
 func (e *PG_E01080007) CanRetry() bool {
 	return false
 }

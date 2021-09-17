@@ -12,6 +12,10 @@ func (e *PG_42G440000) Message() string {
 	return "セキュリティーコードが誤っていた為に、決済を完了する事ができませんでした。"
 }
 
+func (e *PG_42G440000) Code() string {
+	return "42G440000"
+}
+
 func (e *PG_42G440000) CanRetry() bool {
 	return false
 }

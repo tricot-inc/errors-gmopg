@@ -12,6 +12,10 @@ func (e *PG_E21030007) Message() string {
 	return "3Dセキュア認証に失敗しました。もう一度、購入画面からやり直してください。"
 }
 
+func (e *PG_E21030007) Code() string {
+	return "E21030007"
+}
+
 func (e *PG_E21030007) CanRetry() bool {
 	return false
 }

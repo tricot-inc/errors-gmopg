@@ -12,6 +12,10 @@ func (e *PG_E91099997) Message() string {
 	return "リクエストされたAPIは存在しません。URLをお確かめください。"
 }
 
+func (e *PG_E91099997) Code() string {
+	return "E91099997"
+}
+
 func (e *PG_E91099997) CanRetry() bool {
 	return false
 }

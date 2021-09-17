@@ -12,6 +12,10 @@ func (e *PG_E91029998) Message() string {
 	return "決済処理に失敗しました。該当のお取引について、店舗までお問い合わせください。"
 }
 
+func (e *PG_E91029998) Code() string {
+	return "E91029998"
+}
+
 func (e *PG_E91029998) CanRetry() bool {
 	return false
 }

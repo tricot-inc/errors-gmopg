@@ -12,6 +12,10 @@ func (e *PG_E01240002) Message() string {
 	return "指定されたカードが存在しません。"
 }
 
+func (e *PG_E01240002) Code() string {
+	return "E01240002"
+}
+
 func (e *PG_E01240002) CanRetry() bool {
 	return false
 }

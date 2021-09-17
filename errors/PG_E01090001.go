@@ -12,6 +12,10 @@ func (e *PG_E01090001) Message() string {
 	return "取引IDが指定されていません。"
 }
 
+func (e *PG_E01090001) Code() string {
+	return "E01090001"
+}
+
 func (e *PG_E01090001) CanRetry() bool {
 	return false
 }

@@ -12,6 +12,10 @@ func (e *PG_E01060005) Message() string {
 	return "利用金額が最大桁数を超えています。"
 }
 
+func (e *PG_E01060005) Code() string {
+	return "E01060005"
+}
+
 func (e *PG_E01060005) CanRetry() bool {
 	return false
 }

@@ -12,6 +12,10 @@ func (e *PG_E01480008) Message() string {
 	return "名義人の書式が正しくありません。"
 }
 
+func (e *PG_E01480008) Code() string {
+	return "E01480008"
+}
+
 func (e *PG_E01480008) CanRetry() bool {
 	return false
 }

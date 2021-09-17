@@ -12,6 +12,10 @@ func (e *PG_E01370008) Message() string {
 	return "3Dセキュア表示店舗名の書式が正しくありません。"
 }
 
+func (e *PG_E01370008) Code() string {
+	return "E01370008"
+}
+
 func (e *PG_E01370008) CanRetry() bool {
 	return false
 }

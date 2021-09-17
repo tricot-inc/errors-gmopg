@@ -12,6 +12,10 @@ func (e *PG_E01250010) Message() string {
 	return "カードパスワードが一致しません。"
 }
 
+func (e *PG_E01250010) Code() string {
+	return "E01250010"
+}
+
 func (e *PG_E01250010) CanRetry() bool {
 	return false
 }

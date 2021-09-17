@@ -12,6 +12,10 @@ func (e *PG_E11010099) Message() string {
 	return "このカードはご利用になれません。"
 }
 
+func (e *PG_E11010099) Code() string {
+	return "E11010099"
+}
+
 func (e *PG_E11010099) CanRetry() bool {
 	return false
 }

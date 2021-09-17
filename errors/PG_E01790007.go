@@ -12,6 +12,10 @@ func (e *PG_E01790007) Message() string {
 	return "チェック実施日が不正です。"
 }
 
+func (e *PG_E01790007) Code() string {
+	return "E01790007"
+}
+
 func (e *PG_E01790007) CanRetry() bool {
 	return false
 }

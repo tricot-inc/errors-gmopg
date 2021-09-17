@@ -12,6 +12,10 @@ func (e *PG_E01750008) Message() string {
 	return "利用日の書式が正しくありません。"
 }
 
+func (e *PG_E01750008) Code() string {
+	return "E01750008"
+}
+
 func (e *PG_E01750008) CanRetry() bool {
 	return false
 }

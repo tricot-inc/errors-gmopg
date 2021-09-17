@@ -12,6 +12,10 @@ func (e *PG_E01180003) Message() string {
 	return "有効期限が4桁ではありません。"
 }
 
+func (e *PG_E01180003) Code() string {
+	return "E01180003"
+}
+
 func (e *PG_E01180003) CanRetry() bool {
 	return false
 }

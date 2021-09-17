@@ -12,6 +12,10 @@ func (e *PG_E01A50005) Message() string {
 	return "過去24時間の取引回数が最大桁数を超えています。"
 }
 
+func (e *PG_E01A50005) Code() string {
+	return "E01A50005"
+}
+
 func (e *PG_E01A50005) CanRetry() bool {
 	return false
 }

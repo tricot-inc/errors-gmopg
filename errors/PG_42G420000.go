@@ -12,6 +12,10 @@ func (e *PG_42G420000) Message() string {
 	return "暗証番号が誤っていた為に、決済を完了する事ができませんでした。"
 }
 
+func (e *PG_42G420000) Code() string {
+	return "42G420000"
+}
+
 func (e *PG_42G420000) CanRetry() bool {
 	return false
 }

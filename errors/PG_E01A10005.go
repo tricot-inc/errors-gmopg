@@ -12,6 +12,10 @@ func (e *PG_E01A10005) Message() string {
 	return "過去24時間のカード追加の試行回数が最大桁数を超えています。"
 }
 
+func (e *PG_E01A10005) Code() string {
+	return "E01A10005"
+}
+
 func (e *PG_E01A10005) CanRetry() bool {
 	return false
 }

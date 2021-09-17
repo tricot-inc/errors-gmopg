@@ -12,6 +12,10 @@ func (e *PG_E01990006) Message() string {
 	return "過去6ヶ月間の購入回数に数字以外の文字が含まれています。"
 }
 
+func (e *PG_E01990006) Code() string {
+	return "E01990006"
+}
+
 func (e *PG_E01990006) CanRetry() bool {
 	return false
 }

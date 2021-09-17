@@ -12,6 +12,10 @@ func (e *PG_E01070005) Message() string {
 	return "税送料が最大桁数を超えています。"
 }
 
+func (e *PG_E01070005) Code() string {
+	return "E01070005"
+}
+
 func (e *PG_E01070005) CanRetry() bool {
 	return false
 }

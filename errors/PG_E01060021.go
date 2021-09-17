@@ -12,6 +12,10 @@ func (e *PG_E01060021) Message() string {
 	return "取引の利用金額と指定した利用金額が一致していません。"
 }
 
+func (e *PG_E01060021) Code() string {
+	return "E01060021"
+}
+
 func (e *PG_E01060021) CanRetry() bool {
 	return false
 }

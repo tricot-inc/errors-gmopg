@@ -12,6 +12,10 @@ func (e *PG_E41170002) Message() string {
 	return "入力されたカード会社に対応していません。別のカード番号を入力してください。"
 }
 
+func (e *PG_E41170002) Code() string {
+	return "E41170002"
+}
+
 func (e *PG_E41170002) CanRetry() bool {
 	return false
 }

@@ -12,6 +12,10 @@ func (e *PG_E01550001) Message() string {
 	return "日時情報文字列が設定されていません。"
 }
 
+func (e *PG_E01550001) Code() string {
+	return "E01550001"
+}
+
 func (e *PG_E01550001) CanRetry() bool {
 	return false
 }

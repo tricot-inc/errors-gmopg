@@ -12,6 +12,10 @@ func (e *PG_E01C20005) Message() string {
 	return "携帯電話番号が最大桁数を超えています。"
 }
 
+func (e *PG_E01C20005) Code() string {
+	return "E01C20005"
+}
+
 func (e *PG_E01C20005) CanRetry() bool {
 	return false
 }

@@ -12,6 +12,10 @@ func (e *PG_E01110002) Message() string {
 	return "指定されたIDとパスワードの取引が存在しません。"
 }
 
+func (e *PG_E01110002) Code() string {
+	return "E01110002"
+}
+
 func (e *PG_E01110002) CanRetry() bool {
 	return false
 }

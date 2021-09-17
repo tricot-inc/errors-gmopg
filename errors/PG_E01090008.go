@@ -12,6 +12,10 @@ func (e *PG_E01090008) Message() string {
 	return "取引IDの書式が正しくありません。"
 }
 
+func (e *PG_E01090008) Code() string {
+	return "E01090008"
+}
+
 func (e *PG_E01090008) CanRetry() bool {
 	return false
 }

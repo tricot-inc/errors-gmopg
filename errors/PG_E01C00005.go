@@ -12,6 +12,10 @@ func (e *PG_E01C00005) Message() string {
 	return "自宅電話番号が最大桁数を超えています。"
 }
 
+func (e *PG_E01C00005) Code() string {
+	return "E01C00005"
+}
+
 func (e *PG_E01C00005) CanRetry() bool {
 	return false
 }

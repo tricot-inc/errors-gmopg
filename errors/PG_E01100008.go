@@ -12,6 +12,10 @@ func (e *PG_E01100008) Message() string {
 	return "取引パスワードの書式が正しくありません。"
 }
 
+func (e *PG_E01100008) Code() string {
+	return "E01100008"
+}
+
 func (e *PG_E01100008) CanRetry() bool {
 	return false
 }

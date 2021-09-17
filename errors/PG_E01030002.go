@@ -12,6 +12,10 @@ func (e *PG_E01030002) Message() string {
 	return "指定されたIDとパスワードのショップが存在しません。"
 }
 
+func (e *PG_E01030002) Code() string {
+	return "E01030002"
+}
+
 func (e *PG_E01030002) CanRetry() bool {
 	return false
 }

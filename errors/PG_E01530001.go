@@ -12,6 +12,10 @@ func (e *PG_E01530001) Message() string {
 	return "決済結果戻り先URLが設定されていません。"
 }
 
+func (e *PG_E01530001) Code() string {
+	return "E01530001"
+}
+
 func (e *PG_E01530001) CanRetry() bool {
 	return false
 }

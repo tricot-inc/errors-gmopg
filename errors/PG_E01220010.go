@@ -12,6 +12,10 @@ func (e *PG_E01220010) Message() string {
 	return "会員IDが重複しています。"
 }
 
+func (e *PG_E01220010) Code() string {
+	return "E01220010"
+}
+
 func (e *PG_E01220010) CanRetry() bool {
 	return false
 }

@@ -12,6 +12,10 @@ func (e *PG_E01C60005) Message() string {
 	return "配送先住所の国番号が3桁ではありません。"
 }
 
+func (e *PG_E01C60005) Code() string {
+	return "E01C60005"
+}
+
 func (e *PG_E01C60005) CanRetry() bool {
 	return false
 }

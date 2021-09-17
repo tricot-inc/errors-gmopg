@@ -12,6 +12,10 @@ func (e *PG_E01500012) Message() string {
 	return "ショップ情報文字列が他の項目と矛盾しています。"
 }
 
+func (e *PG_E01500012) Code() string {
+	return "E01500012"
+}
+
 func (e *PG_E01500012) CanRetry() bool {
 	return false
 }

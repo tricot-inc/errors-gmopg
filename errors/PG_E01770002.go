@@ -12,6 +12,10 @@ func (e *PG_E01770002) Message() string {
 	return "区分が不正です。"
 }
 
+func (e *PG_E01770002) Code() string {
+	return "E01770002"
+}
+
 func (e *PG_E01770002) CanRetry() bool {
 	return false
 }

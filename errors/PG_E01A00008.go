@@ -12,6 +12,10 @@ func (e *PG_E01A00008) Message() string {
 	return "カード登録日の書式が正しくありません。"
 }
 
+func (e *PG_E01A00008) Code() string {
+	return "E01A00008"
+}
+
 func (e *PG_E01A00008) CanRetry() bool {
 	return false
 }

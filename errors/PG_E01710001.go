@@ -12,6 +12,10 @@ func (e *PG_E01710001) Message() string {
 	return "取引区分(継続課金)が設定されていません。"
 }
 
+func (e *PG_E01710001) Code() string {
+	return "E01710001"
+}
+
 func (e *PG_E01710001) CanRetry() bool {
 	return false
 }

@@ -12,6 +12,10 @@ func (e *PG_E01540005) Message() string {
 	return "決済キャンセル時URLが最大文字数を超えています。"
 }
 
+func (e *PG_E01540005) Code() string {
+	return "E01540005"
+}
+
 func (e *PG_E01540005) CanRetry() bool {
 	return false
 }

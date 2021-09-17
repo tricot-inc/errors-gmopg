@@ -12,6 +12,10 @@ func (e *PG_E01D80008) Message() string {
 	return "商品の販売時期情報の書式が正しくありません。"
 }
 
+func (e *PG_E01D80008) Code() string {
+	return "E01D80008"
+}
+
 func (e *PG_E01D80008) CanRetry() bool {
 	return false
 }

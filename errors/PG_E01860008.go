@@ -12,6 +12,10 @@ func (e *PG_E01860008) Message() string {
 	return "カード番号マスクフラグの書式が正しくありません。"
 }
 
+func (e *PG_E01860008) Code() string {
+	return "E01860008"
+}
+
 func (e *PG_E01860008) CanRetry() bool {
 	return false
 }

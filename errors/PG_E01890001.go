@@ -12,6 +12,10 @@ func (e *PG_E01890001) Message() string {
 	return "登録済みカード登録連番が指定されていません。"
 }
 
+func (e *PG_E01890001) Code() string {
+	return "E01890001"
+}
+
 func (e *PG_E01890001) CanRetry() bool {
 	return false
 }

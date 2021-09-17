@@ -12,6 +12,10 @@ func (e *PG_E01790011) Message() string {
 	return "チェック実施日が最大桁数を超えています。"
 }
 
+func (e *PG_E01790011) Code() string {
+	return "E01790011"
+}
+
 func (e *PG_E01790011) CanRetry() bool {
 	return false
 }

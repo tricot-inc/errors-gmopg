@@ -12,6 +12,10 @@ func (e *PG_E01990005) Message() string {
 	return "過去6ヶ月間の購入回数が最大桁数を超えています。"
 }
 
+func (e *PG_E01990005) Code() string {
+	return "E01990005"
+}
+
 func (e *PG_E01990005) CanRetry() bool {
 	return false
 }

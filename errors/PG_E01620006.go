@@ -12,6 +12,10 @@ func (e *PG_E01620006) Message() string {
 	return "セッションタイムアウト値に数字以外が設定されています。"
 }
 
+func (e *PG_E01620006) Code() string {
+	return "E01620006"
+}
+
 func (e *PG_E01620006) CanRetry() bool {
 	return false
 }

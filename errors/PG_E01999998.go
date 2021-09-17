@@ -12,6 +12,10 @@ func (e *PG_E01999998) Message() string {
 	return "項目1「フォーマットバージョン」に”001”が指定されていません。"
 }
 
+func (e *PG_E01999998) Code() string {
+	return "E01999998"
+}
+
 func (e *PG_E01999998) CanRetry() bool {
 	return false
 }

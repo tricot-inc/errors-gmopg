@@ -12,6 +12,10 @@ func (e *PG_E01D20005) Message() string {
 	return "納品先電子メールアドレスが最大桁数を超えています。"
 }
 
+func (e *PG_E01D20005) Code() string {
+	return "E01D20005"
+}
+
 func (e *PG_E01D20005) CanRetry() bool {
 	return false
 }

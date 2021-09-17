@@ -12,6 +12,10 @@ func (e *PG_E01050004) Message() string {
 	return "指定した処理区分の処理は実行できません。"
 }
 
+func (e *PG_E01050004) Code() string {
+	return "E01050004"
+}
+
 func (e *PG_E01050004) CanRetry() bool {
 	return false
 }

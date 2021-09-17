@@ -12,6 +12,10 @@ func (e *PG_E01E90001) Message() string {
 	return "職場電話番号の指定が正しくありません。職場電話の国コード/職場電話番号のいずれかの省略はできません。"
 }
 
+func (e *PG_E01E90001) Code() string {
+	return "E01E90001"
+}
+
 func (e *PG_E01E90001) CanRetry() bool {
 	return false
 }

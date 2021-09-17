@@ -12,6 +12,10 @@ func (e *PG_E01200007) Message() string {
 	return "サイトIDが正しくありません。"
 }
 
+func (e *PG_E01200007) Code() string {
+	return "E01200007"
+}
+
 func (e *PG_E01200007) CanRetry() bool {
 	return false
 }

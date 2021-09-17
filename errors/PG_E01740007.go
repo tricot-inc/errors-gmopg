@@ -12,6 +12,10 @@ func (e *PG_E01740007) Message() string {
 	return "端末処理通番に数字以外の文字が含まれています。"
 }
 
+func (e *PG_E01740007) Code() string {
+	return "E01740007"
+}
+
 func (e *PG_E01740007) CanRetry() bool {
 	return false
 }

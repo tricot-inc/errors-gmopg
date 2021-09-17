@@ -12,6 +12,10 @@ func (e *PG_42G550000) Message() string {
 	return "カード限度額を超えているために、決済を完了する事ができませんでした。"
 }
 
+func (e *PG_42G550000) Code() string {
+	return "42G550000"
+}
+
 func (e *PG_42G550000) CanRetry() bool {
 	return false
 }

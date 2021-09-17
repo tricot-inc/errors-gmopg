@@ -12,6 +12,10 @@ func (e *PG_E01D40005) Message() string {
 	return "プリペイドカードまたはギフトカードの総購入金額が最大桁数を超えています。"
 }
 
+func (e *PG_E01D40005) Code() string {
+	return "E01D40005"
+}
+
 func (e *PG_E01D40005) CanRetry() bool {
 	return false
 }

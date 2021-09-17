@@ -12,6 +12,10 @@ func (e *PG_E01C30005) Message() string {
 	return "職場電話の国コードが最大桁数を超えています。"
 }
 
+func (e *PG_E01C30005) Code() string {
+	return "E01C30005"
+}
+
 func (e *PG_E01C30005) CanRetry() bool {
 	return false
 }

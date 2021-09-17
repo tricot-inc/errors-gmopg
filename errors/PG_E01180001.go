@@ -12,6 +12,10 @@ func (e *PG_E01180001) Message() string {
 	return "有効期限が指定されていません。"
 }
 
+func (e *PG_E01180001) Code() string {
+	return "E01180001"
+}
+
 func (e *PG_E01180001) CanRetry() bool {
 	return false
 }

@@ -12,6 +12,10 @@ func (e *PG_E01B80008) Message() string {
 	return "カード会員のメールアドレスの書式が正しくありません。"
 }
 
+func (e *PG_E01B80008) Code() string {
+	return "E01B80008"
+}
+
 func (e *PG_E01B80008) CanRetry() bool {
 	return false
 }

@@ -12,6 +12,10 @@ func (e *PG_E01C20006) Message() string {
 	return "携帯電話番号に数字以外の文字が含まれています。"
 }
 
+func (e *PG_E01C20006) Code() string {
+	return "E01C20006"
+}
+
 func (e *PG_E01C20006) CanRetry() bool {
 	return false
 }

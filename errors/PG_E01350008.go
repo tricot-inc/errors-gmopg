@@ -12,6 +12,10 @@ func (e *PG_E01350008) Message() string {
 	return "MDの書式が正しくありません。"
 }
 
+func (e *PG_E01350008) Code() string {
+	return "E01350008"
+}
+
 func (e *PG_E01350008) CanRetry() bool {
 	return false
 }

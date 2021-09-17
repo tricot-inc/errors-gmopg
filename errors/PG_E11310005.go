@@ -12,6 +12,10 @@ func (e *PG_E11310005) Message() string {
 	return "すでにカードを登録している会員は、取引後カード登録を実行できません。"
 }
 
+func (e *PG_E11310005) Code() string {
+	return "E11310005"
+}
+
 func (e *PG_E11310005) CanRetry() bool {
 	return false
 }

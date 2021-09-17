@@ -12,6 +12,10 @@ func (e *PG_E01960008) Message() string {
 	return "カード会員最終更新日の書式が正しくありません。"
 }
 
+func (e *PG_E01960008) Code() string {
+	return "E01960008"
+}
+
 func (e *PG_E01960008) CanRetry() bool {
 	return false
 }

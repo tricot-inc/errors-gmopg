@@ -12,6 +12,10 @@ func (e *PG_E61040001) Message() string {
 	return "現在のご契約では、カード番号を指定した決済処理は許可されていません。"
 }
 
+func (e *PG_E61040001) Code() string {
+	return "E61040001"
+}
+
 func (e *PG_E61040001) CanRetry() bool {
 	return false
 }

@@ -12,6 +12,10 @@ func (e *PG_E61010002) Message() string {
 	return "ご利用出来ないカードをご利用になったもしくはカード番号が誤っております。"
 }
 
+func (e *PG_E61010002) Code() string {
+	return "E61010002"
+}
+
 func (e *PG_E61010002) CanRetry() bool {
 	return false
 }

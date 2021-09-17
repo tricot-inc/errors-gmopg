@@ -12,6 +12,10 @@ func (e *PG_E01260002) Message() string {
 	return "指定された支払方法が存在しません。"
 }
 
+func (e *PG_E01260002) Code() string {
+	return "E01260002"
+}
+
 func (e *PG_E01260002) CanRetry() bool {
 	return false
 }

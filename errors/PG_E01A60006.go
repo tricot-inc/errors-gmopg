@@ -12,6 +12,10 @@ func (e *PG_E01A60006) Message() string {
 	return "前年の取引回数に数字以外の文字が含まれています。"
 }
 
+func (e *PG_E01A60006) Code() string {
+	return "E01A60006"
+}
+
 func (e *PG_E01A60006) CanRetry() bool {
 	return false
 }

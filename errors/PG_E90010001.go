@@ -12,6 +12,10 @@ func (e *PG_E90010001) Message() string {
 	return "現在処理を行っているのでもうしばらくお待ちください。"
 }
 
+func (e *PG_E90010001) Code() string {
+	return "E90010001"
+}
+
 func (e *PG_E90010001) CanRetry() bool {
 	return false
 }

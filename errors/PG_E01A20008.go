@@ -12,6 +12,10 @@ func (e *PG_E01A20008) Message() string {
 	return "配送先住所の初回使用日の書式が正しくありません。"
 }
 
+func (e *PG_E01A20008) Code() string {
+	return "E01A20008"
+}
+
 func (e *PG_E01A20008) CanRetry() bool {
 	return false
 }

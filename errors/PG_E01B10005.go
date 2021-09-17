@@ -12,6 +12,10 @@ func (e *PG_E01B10005) Message() string {
 	return "請求先住所の都市が最大桁数を超えています。"
 }
 
+func (e *PG_E01B10005) Code() string {
+	return "E01B10005"
+}
+
 func (e *PG_E01B10005) CanRetry() bool {
 	return false
 }

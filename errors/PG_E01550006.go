@@ -12,6 +12,10 @@ func (e *PG_E01550006) Message() string {
 	return "日時情報文字列に無効な文字が含まれます。"
 }
 
+func (e *PG_E01550006) Code() string {
+	return "E01550006"
+}
+
 func (e *PG_E01550006) CanRetry() bool {
 	return false
 }

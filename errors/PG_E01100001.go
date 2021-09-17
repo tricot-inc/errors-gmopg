@@ -12,6 +12,10 @@ func (e *PG_E01100001) Message() string {
 	return "取引パスワードが指定されていません。"
 }
 
+func (e *PG_E01100001) Code() string {
+	return "E01100001"
+}
+
 func (e *PG_E01100001) CanRetry() bool {
 	return false
 }

@@ -12,6 +12,10 @@ func (e *PG_E01450008) Message() string {
 	return "商品コードの書式が正しくありません。"
 }
 
+func (e *PG_E01450008) Code() string {
+	return "E01450008"
+}
+
 func (e *PG_E01450008) CanRetry() bool {
 	return false
 }

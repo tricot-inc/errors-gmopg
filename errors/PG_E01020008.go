@@ -12,6 +12,10 @@ func (e *PG_E01020008) Message() string {
 	return "ショップパスワードに半角英数字以外の文字が含まれているか、10文字を超えています。"
 }
 
+func (e *PG_E01020008) Code() string {
+	return "E01020008"
+}
+
 func (e *PG_E01020008) CanRetry() bool {
 	return false
 }

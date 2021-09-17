@@ -12,6 +12,10 @@ func (e *PG_E01800010) Message() string {
 	return "暗証番号は利用できません。"
 }
 
+func (e *PG_E01800010) Code() string {
+	return "E01800010"
+}
+
 func (e *PG_E01800010) CanRetry() bool {
 	return false
 }

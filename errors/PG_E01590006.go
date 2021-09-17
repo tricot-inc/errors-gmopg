@@ -12,6 +12,10 @@ func (e *PG_E01590006) Message() string {
 	return "商品コードに無効な文字が含まれます。"
 }
 
+func (e *PG_E01590006) Code() string {
+	return "E01590006"
+}
+
 func (e *PG_E01590006) CanRetry() bool {
 	return false
 }

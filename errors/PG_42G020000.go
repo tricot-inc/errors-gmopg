@@ -12,6 +12,10 @@ func (e *PG_42G020000) Message() string {
 	return "カード残高が不足しているために、決済を完了する事ができませんでした。"
 }
 
+func (e *PG_42G020000) Code() string {
+	return "42G020000"
+}
+
 func (e *PG_42G020000) CanRetry() bool {
 	return false
 }

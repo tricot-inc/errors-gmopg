@@ -12,6 +12,10 @@ func (e *PG_E01E30005) Message() string {
 	return "加盟店戻りURLが最大桁数を超えています。"
 }
 
+func (e *PG_E01E30005) Code() string {
+	return "E01E30005"
+}
+
 func (e *PG_E01E30005) CanRetry() bool {
 	return false
 }

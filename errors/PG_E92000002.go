@@ -12,6 +12,10 @@ func (e *PG_E92000002) Message() string {
 	return "只今、大変込み合っていますので、しばらく時間をあけて再度決済を行ってください。"
 }
 
+func (e *PG_E92000002) Code() string {
+	return "E92000002"
+}
+
 func (e *PG_E92000002) CanRetry() bool {
 	return true
 }

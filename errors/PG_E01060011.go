@@ -12,6 +12,10 @@ func (e *PG_E01060011) Message() string {
 	return "利用金額が有効な範囲を超えています。"
 }
 
+func (e *PG_E01060011) Code() string {
+	return "E01060011"
+}
+
 func (e *PG_E01060011) CanRetry() bool {
 	return false
 }

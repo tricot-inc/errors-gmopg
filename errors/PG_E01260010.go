@@ -12,6 +12,10 @@ func (e *PG_E01260010) Message() string {
 	return "指定されたカード番号または支払方法が正しくありません。"
 }
 
+func (e *PG_E01260010) Code() string {
+	return "E01260010"
+}
+
 func (e *PG_E01260010) CanRetry() bool {
 	return false
 }

@@ -12,6 +12,10 @@ func (e *PG_E01130012) Message() string {
 	return "カード会社略称が最大バイト数を超えています。"
 }
 
+func (e *PG_E01130012) Code() string {
+	return "E01130012"
+}
+
 func (e *PG_E01130012) CanRetry() bool {
 	return false
 }

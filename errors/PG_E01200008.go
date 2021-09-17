@@ -12,6 +12,10 @@ func (e *PG_E01200008) Message() string {
 	return "サイトパスワードの書式が正しくありません。"
 }
 
+func (e *PG_E01200008) Code() string {
+	return "E01200008"
+}
+
 func (e *PG_E01200008) CanRetry() bool {
 	return false
 }

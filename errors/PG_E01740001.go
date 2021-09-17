@@ -12,6 +12,10 @@ func (e *PG_E01740001) Message() string {
 	return "端末処理通番が指定されていません。"
 }
 
+func (e *PG_E01740001) Code() string {
+	return "E01740001"
+}
+
 func (e *PG_E01740001) CanRetry() bool {
 	return false
 }

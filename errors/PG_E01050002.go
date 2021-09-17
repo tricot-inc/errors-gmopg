@@ -12,6 +12,10 @@ func (e *PG_E01050002) Message() string {
 	return "指定された処理区分は定義されていません。"
 }
 
+func (e *PG_E01050002) Code() string {
+	return "E01050002"
+}
+
 func (e *PG_E01050002) CanRetry() bool {
 	return false
 }

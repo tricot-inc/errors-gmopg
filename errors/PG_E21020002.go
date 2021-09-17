@@ -12,6 +12,10 @@ func (e *PG_E21020002) Message() string {
 	return "3Dセキュア認証がキャンセルされました。もう一度、購入画面からやり直してください。"
 }
 
+func (e *PG_E21020002) Code() string {
+	return "E21020002"
+}
+
 func (e *PG_E21020002) CanRetry() bool {
 	return false
 }

@@ -12,6 +12,10 @@ func (e *PG_E01D40006) Message() string {
 	return "プリペイドカードまたはギフトカードの総購入金額に数字以外の文字が含まれています。"
 }
 
+func (e *PG_E01D40006) Code() string {
+	return "E01D40006"
+}
+
 func (e *PG_E01D40006) CanRetry() bool {
 	return false
 }

@@ -12,6 +12,10 @@ func (e *PG_E01170001) Message() string {
 	return "カード番号が指定されていません。"
 }
 
+func (e *PG_E01170001) Code() string {
+	return "E01170001"
+}
+
 func (e *PG_E01170001) CanRetry() bool {
 	return false
 }

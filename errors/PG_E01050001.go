@@ -12,6 +12,10 @@ func (e *PG_E01050001) Message() string {
 	return "処理区分が指定されていません。"
 }
 
+func (e *PG_E01050001) Code() string {
+	return "E01050001"
+}
+
 func (e *PG_E01050001) CanRetry() bool {
 	return false
 }

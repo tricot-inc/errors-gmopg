@@ -12,6 +12,10 @@ func (e *PG_E01390002) Message() string {
 	return "指定されたサイトIDと会員IDの会員が存在しません。"
 }
 
+func (e *PG_E01390002) Code() string {
+	return "E01390002"
+}
+
 func (e *PG_E01390002) CanRetry() bool {
 	return false
 }

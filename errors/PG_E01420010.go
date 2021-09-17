@@ -12,6 +12,10 @@ func (e *PG_E01420010) Message() string {
 	return "仮売上有効期間を超えています。"
 }
 
+func (e *PG_E01420010) Code() string {
+	return "E01420010"
+}
+
 func (e *PG_E01420010) CanRetry() bool {
 	return false
 }

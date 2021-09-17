@@ -12,6 +12,10 @@ func (e *PG_42G910000) Message() string {
 	return "システム障害のために、決済を完了する事ができませんでした。"
 }
 
+func (e *PG_42G910000) Code() string {
+	return "42G910000"
+}
+
 func (e *PG_42G910000) CanRetry() bool {
 	return false
 }

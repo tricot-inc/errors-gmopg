@@ -12,6 +12,10 @@ func (e *PG_E01E20006) Message() string {
 	return "継続課金の課金最小間隔日数に数字以外の文字が含まれています。"
 }
 
+func (e *PG_E01E20006) Code() string {
+	return "E01E20006"
+}
+
 func (e *PG_E01E20006) CanRetry() bool {
 	return false
 }

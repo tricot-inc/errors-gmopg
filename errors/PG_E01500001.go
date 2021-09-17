@@ -12,6 +12,10 @@ func (e *PG_E01500001) Message() string {
 	return "ショップ情報文字列が設定されていません。"
 }
 
+func (e *PG_E01500001) Code() string {
+	return "E01500001"
+}
+
 func (e *PG_E01500001) CanRetry() bool {
 	return false
 }

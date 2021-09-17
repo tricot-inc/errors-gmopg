@@ -12,6 +12,10 @@ func (e *PG_E01A60005) Message() string {
 	return "前年の取引回数が最大桁数を超えています。"
 }
 
+func (e *PG_E01A60005) Code() string {
+	return "E01A60005"
+}
+
 func (e *PG_E01A60005) CanRetry() bool {
 	return false
 }

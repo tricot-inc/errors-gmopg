@@ -12,6 +12,10 @@ func (e *PG_E01360001) Message() string {
 	return "PaResが指定されていません。"
 }
 
+func (e *PG_E01360001) Code() string {
+	return "E01360001"
+}
+
 func (e *PG_E01360001) CanRetry() bool {
 	return false
 }

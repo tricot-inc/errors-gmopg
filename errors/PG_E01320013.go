@@ -12,6 +12,10 @@ func (e *PG_E01320013) Message() string {
 	return "加盟店自由項目1の値に利用できない文字が含まれています。"
 }
 
+func (e *PG_E01320013) Code() string {
+	return "E01320013"
+}
+
 func (e *PG_E01320013) CanRetry() bool {
 	return false
 }

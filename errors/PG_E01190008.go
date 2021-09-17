@@ -12,6 +12,10 @@ func (e *PG_E01190008) Message() string {
 	return "サイトIDの書式が正しくありません。"
 }
 
+func (e *PG_E01190008) Code() string {
+	return "E01190008"
+}
+
 func (e *PG_E01190008) CanRetry() bool {
 	return false
 }

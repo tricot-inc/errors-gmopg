@@ -12,6 +12,10 @@ func (e *PG_E01220012) Message() string {
 	return "会員IDの長さが正しくありません。"
 }
 
+func (e *PG_E01220012) Code() string {
+	return "E01220012"
+}
+
 func (e *PG_E01220012) CanRetry() bool {
 	return false
 }

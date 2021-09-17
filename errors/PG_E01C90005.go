@@ -12,6 +12,10 @@ func (e *PG_E01C90005) Message() string {
 	return "配送先住所の区域部分の3行目が最大桁数を超えています。"
 }
 
+func (e *PG_E01C90005) Code() string {
+	return "E01C90005"
+}
+
 func (e *PG_E01C90005) CanRetry() bool {
 	return false
 }

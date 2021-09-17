@@ -12,6 +12,10 @@ func (e *PG_E01040001) Message() string {
 	return "オーダーIDが指定されていません。"
 }
 
+func (e *PG_E01040001) Code() string {
+	return "E01040001"
+}
+
 func (e *PG_E01040001) CanRetry() bool {
 	return false
 }

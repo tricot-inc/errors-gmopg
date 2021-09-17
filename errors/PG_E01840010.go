@@ -12,6 +12,10 @@ func (e *PG_E01840010) Message() string {
 	return "必要な入力パラメータが指定されていません。"
 }
 
+func (e *PG_E01840010) Code() string {
+	return "E01840010"
+}
+
 func (e *PG_E01840010) CanRetry() bool {
 	return false
 }

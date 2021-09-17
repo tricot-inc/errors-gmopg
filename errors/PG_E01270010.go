@@ -12,6 +12,10 @@ func (e *PG_E01270010) Message() string {
 	return "指定された支払回数はご利用できません。"
 }
 
+func (e *PG_E01270010) Code() string {
+	return "E01270010"
+}
+
 func (e *PG_E01270010) CanRetry() bool {
 	return false
 }

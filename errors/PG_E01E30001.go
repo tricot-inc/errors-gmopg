@@ -12,6 +12,10 @@ func (e *PG_E01E30001) Message() string {
 	return "戻りURLが指定されていません。"
 }
 
+func (e *PG_E01E30001) Code() string {
+	return "E01E30001"
+}
+
 func (e *PG_E01E30001) CanRetry() bool {
 	return false
 }

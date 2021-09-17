@@ -12,6 +12,10 @@ func (e *PG_E01010008) Message() string {
 	return "ショップIDに半角英数字以外の文字が含まれているか、13文字を超えています。"
 }
 
+func (e *PG_E01010008) Code() string {
+	return "E01010008"
+}
+
 func (e *PG_E01010008) CanRetry() bool {
 	return false
 }

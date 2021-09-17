@@ -12,6 +12,10 @@ func (e *PG_E01C60002) Message() string {
 	return "配送先住所の国番号が存在しません。"
 }
 
+func (e *PG_E01C60002) Code() string {
+	return "E01C60002"
+}
+
 func (e *PG_E01C60002) CanRetry() bool {
 	return false
 }

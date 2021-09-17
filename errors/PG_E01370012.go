@@ -12,6 +12,10 @@ func (e *PG_E01370012) Message() string {
 	return "3Dセキュア表示店舗名の値が最大バイト数を超えています。"
 }
 
+func (e *PG_E01370012) Code() string {
+	return "E01370012"
+}
+
 func (e *PG_E01370012) CanRetry() bool {
 	return false
 }

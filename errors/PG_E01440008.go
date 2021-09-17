@@ -12,6 +12,10 @@ func (e *PG_E01440008) Message() string {
 	return "洗替・継続課金フラグの書式が正しくありません。"
 }
 
+func (e *PG_E01440008) Code() string {
+	return "E01440008"
+}
+
 func (e *PG_E01440008) CanRetry() bool {
 	return false
 }

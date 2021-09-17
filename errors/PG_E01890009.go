@@ -12,6 +12,10 @@ func (e *PG_E01890009) Message() string {
 	return "カード登録連番が最大登録可能数を超えています。"
 }
 
+func (e *PG_E01890009) Code() string {
+	return "E01890009"
+}
+
 func (e *PG_E01890009) CanRetry() bool {
 	return false
 }

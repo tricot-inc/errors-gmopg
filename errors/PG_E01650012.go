@@ -12,6 +12,10 @@ func (e *PG_E01650012) Message() string {
 	return "指定されたショップは、指定されたサイトに属していません。"
 }
 
+func (e *PG_E01650012) Code() string {
+	return "E01650012"
+}
+
 func (e *PG_E01650012) CanRetry() bool {
 	return false
 }

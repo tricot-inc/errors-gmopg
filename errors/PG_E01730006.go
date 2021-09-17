@@ -12,6 +12,10 @@ func (e *PG_E01730006) Message() string {
 	return "商品コードが”0000990”ではありません。"
 }
 
+func (e *PG_E01730006) Code() string {
+	return "E01730006"
+}
+
 func (e *PG_E01730006) CanRetry() bool {
 	return false
 }

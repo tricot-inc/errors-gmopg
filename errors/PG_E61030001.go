@@ -12,6 +12,10 @@ func (e *PG_E61030001) Message() string {
 	return "ご契約内容エラー/現在のご契約では、ご利用になれません。"
 }
 
+func (e *PG_E61030001) Code() string {
+	return "E61030001"
+}
+
 func (e *PG_E61030001) CanRetry() bool {
 	return false
 }

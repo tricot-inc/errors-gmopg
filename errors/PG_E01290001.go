@@ -12,6 +12,10 @@ func (e *PG_E01290001) Message() string {
 	return "HTTP_ACCEPTが指定されていません。"
 }
 
+func (e *PG_E01290001) Code() string {
+	return "E01290001"
+}
+
 func (e *PG_E01290001) CanRetry() bool {
 	return false
 }

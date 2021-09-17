@@ -12,6 +12,10 @@ func (e *PG_42G960000) Message() string {
 	return "このカードでは取引をする事ができません。"
 }
 
+func (e *PG_42G960000) Code() string {
+	return "42G960000"
+}
+
 func (e *PG_42G960000) CanRetry() bool {
 	return false
 }

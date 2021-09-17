@@ -12,6 +12,10 @@ func (e *PG_E01350001) Message() string {
 	return "MDが指定されていません。"
 }
 
+func (e *PG_E01350001) Code() string {
+	return "E01350001"
+}
+
 func (e *PG_E01350001) CanRetry() bool {
 	return false
 }

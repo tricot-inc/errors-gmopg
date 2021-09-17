@@ -12,6 +12,10 @@ func (e *PG_E01040013) Message() string {
 	return "オーダーIDに半角英数字と”-”以外の文字が含まれています。"
 }
 
+func (e *PG_E01040013) Code() string {
+	return "E01040013"
+}
+
 func (e *PG_E01040013) CanRetry() bool {
 	return false
 }

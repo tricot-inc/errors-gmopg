@@ -12,6 +12,10 @@ func (e *PG_E01200001) Message() string {
 	return "サイトパスワードが指定されていません。"
 }
 
+func (e *PG_E01200001) Code() string {
+	return "E01200001"
+}
+
 func (e *PG_E01200001) CanRetry() bool {
 	return false
 }

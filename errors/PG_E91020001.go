@@ -12,6 +12,10 @@ func (e *PG_E91020001) Message() string {
 	return "通信タイムアウトが発生しました。申し訳ございませんが、しばらく時間をあけて購入画面からやり直してください。"
 }
 
+func (e *PG_E91020001) Code() string {
+	return "E91020001"
+}
+
 func (e *PG_E91020001) CanRetry() bool {
 	return false
 }

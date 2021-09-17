@@ -12,6 +12,10 @@ func (e *PG_E82010001) Message() string {
 	return "実行中にエラーが発生しました。処理は開始されませんでした。"
 }
 
+func (e *PG_E82010001) Code() string {
+	return "E82010001"
+}
+
 func (e *PG_E82010001) CanRetry() bool {
 	return false
 }

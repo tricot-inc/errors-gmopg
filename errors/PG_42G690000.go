@@ -12,6 +12,10 @@ func (e *PG_42G690000) Message() string {
 	return "税送料に誤りがあるために、決済を完了する事ができませんでした。"
 }
 
+func (e *PG_42G690000) Code() string {
+	return "42G690000"
+}
+
 func (e *PG_42G690000) CanRetry() bool {
 	return false
 }

@@ -12,6 +12,10 @@ func (e *PG_E01170003) Message() string {
 	return "カード番号が最大文字数を超えています。"
 }
 
+func (e *PG_E01170003) Code() string {
+	return "E01170003"
+}
+
 func (e *PG_E01170003) CanRetry() bool {
 	return false
 }

@@ -12,6 +12,10 @@ func (e *PG_E01490005) Message() string {
 	return "利用金額・税送料の合計値が有効な範囲を超えています。"
 }
 
+func (e *PG_E01490005) Code() string {
+	return "E01490005"
+}
+
 func (e *PG_E01490005) CanRetry() bool {
 	return false
 }

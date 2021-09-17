@@ -12,6 +12,10 @@ func (e *PG_E01340012) Message() string {
 	return "加盟店自由項目3の値が最大バイト数を超えています。"
 }
 
+func (e *PG_E01340012) Code() string {
+	return "E01340012"
+}
+
 func (e *PG_E01340012) CanRetry() bool {
 	return false
 }

@@ -12,6 +12,10 @@ func (e *PG_E01180008) Message() string {
 	return "有効期限の書式が正しくありません。"
 }
 
+func (e *PG_E01180008) Code() string {
+	return "E01180008"
+}
+
 func (e *PG_E01180008) CanRetry() bool {
 	return false
 }

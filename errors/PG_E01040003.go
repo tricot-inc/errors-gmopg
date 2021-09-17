@@ -12,6 +12,10 @@ func (e *PG_E01040003) Message() string {
 	return "オーダーIDが最大文字数を超えています。"
 }
 
+func (e *PG_E01040003) Code() string {
+	return "E01040003"
+}
+
 func (e *PG_E01040003) CanRetry() bool {
 	return false
 }

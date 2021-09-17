@@ -12,6 +12,10 @@ func (e *PG_E21010202) Message() string {
 	return "このカードでは取引をする事ができません。3Dセキュア認証に対応したカードをお使いください。"
 }
 
+func (e *PG_E21010202) Code() string {
+	return "E21010202"
+}
+
 func (e *PG_E21010202) CanRetry() bool {
 	return false
 }

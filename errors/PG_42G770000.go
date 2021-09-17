@@ -12,6 +12,10 @@ func (e *PG_42G770000) Message() string {
 	return "業務区分に誤りがあるために、決済を完了する事ができませんでした。"
 }
 
+func (e *PG_42G770000) Code() string {
+	return "42G770000"
+}
+
 func (e *PG_42G770000) CanRetry() bool {
 	return false
 }

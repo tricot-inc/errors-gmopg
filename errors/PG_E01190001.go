@@ -12,6 +12,10 @@ func (e *PG_E01190001) Message() string {
 	return "サイトIDが指定されていません。"
 }
 
+func (e *PG_E01190001) Code() string {
+	return "E01190001"
+}
+
 func (e *PG_E01190001) CanRetry() bool {
 	return false
 }

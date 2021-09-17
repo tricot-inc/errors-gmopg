@@ -12,6 +12,10 @@ func (e *PG_E11310002) Message() string {
 	return "この取引はリンク決済を実行できません。"
 }
 
+func (e *PG_E11310002) Code() string {
+	return "E11310002"
+}
+
 func (e *PG_E11310002) CanRetry() bool {
 	return false
 }

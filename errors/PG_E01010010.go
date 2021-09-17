@@ -12,6 +12,10 @@ func (e *PG_E01010010) Message() string {
 	return "ショップIDが一致しません。"
 }
 
+func (e *PG_E01010010) Code() string {
+	return "E01010010"
+}
+
 func (e *PG_E01010010) CanRetry() bool {
 	return false
 }

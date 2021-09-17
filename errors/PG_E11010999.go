@@ -12,6 +12,10 @@ func (e *PG_E11010999) Message() string {
 	return "特になし"
 }
 
+func (e *PG_E11010999) Code() string {
+	return "E11010999"
+}
+
 func (e *PG_E11010999) CanRetry() bool {
 	return false
 }

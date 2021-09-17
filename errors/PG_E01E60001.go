@@ -12,6 +12,10 @@ func (e *PG_E01E60001) Message() string {
 	return "カード会員のログイン情報の指定が正しくありません。ログイン証跡/ログイン方法/ログイン日時のいずれかの省略はできません。"
 }
 
+func (e *PG_E01E60001) Code() string {
+	return "E01E60001"
+}
+
 func (e *PG_E01E60001) CanRetry() bool {
 	return false
 }

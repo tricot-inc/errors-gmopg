@@ -12,6 +12,10 @@ func (e *PG_E01510012) Message() string {
 	return "購買情報文字列が他の項目と矛盾しています。"
 }
 
+func (e *PG_E01510012) Code() string {
+	return "E01510012"
+}
+
 func (e *PG_E01510012) CanRetry() bool {
 	return false
 }

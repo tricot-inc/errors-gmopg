@@ -12,6 +12,10 @@ func (e *PG_E01850008) Message() string {
 	return "更新区分の書式が正しくありません。"
 }
 
+func (e *PG_E01850008) Code() string {
+	return "E01850008"
+}
+
 func (e *PG_E01850008) CanRetry() bool {
 	return false
 }

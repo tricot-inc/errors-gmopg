@@ -12,6 +12,10 @@ func (e *PG_E00000010) Message() string {
 	return "-"
 }
 
+func (e *PG_E00000010) Code() string {
+	return "E00000010"
+}
+
 func (e *PG_E00000010) CanRetry() bool {
 	return false
 }

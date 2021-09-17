@@ -12,6 +12,10 @@ func (e *PG_E01880008) Message() string {
 	return "登録済み会員IDの書式が正しくありません。"
 }
 
+func (e *PG_E01880008) Code() string {
+	return "E01880008"
+}
+
 func (e *PG_E01880008) CanRetry() bool {
 	return false
 }

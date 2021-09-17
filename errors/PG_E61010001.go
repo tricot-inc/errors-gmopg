@@ -12,6 +12,10 @@ func (e *PG_E61010001) Message() string {
 	return "決済処理に失敗しました。申し訳ございませんが、しばらく時間をあけて購入画面からやり直してください。"
 }
 
+func (e *PG_E61010001) Code() string {
+	return "E61010001"
+}
+
 func (e *PG_E61010001) CanRetry() bool {
 	return false
 }

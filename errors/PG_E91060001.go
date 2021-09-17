@@ -12,6 +12,10 @@ func (e *PG_E91060001) Message() string {
 	return "システムの内部エラーです。発生時刻や呼び出しパラメータをご確認のうえ、お問い合わせください。"
 }
 
+func (e *PG_E91060001) Code() string {
+	return "E91060001"
+}
+
 func (e *PG_E91060001) CanRetry() bool {
 	return false
 }

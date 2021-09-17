@@ -12,6 +12,10 @@ func (e *PG_{{.ErrorCode}}) Message() string {
     return "{{.ErrorMessage}}"
 }
 
+func (e *PG_{{.ErrorCode}}) Code() string {
+    return "{{.ErrorCode}}"
+}
+
 func (e *PG_{{.ErrorCode}}) CanRetry() bool {
     return {{.Retryable}}
 }

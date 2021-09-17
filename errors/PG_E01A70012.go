@@ -12,6 +12,10 @@ func (e *PG_E01A70012) Message() string {
 	return "ログイン証跡が最大バイト数を超えています。"
 }
 
+func (e *PG_E01A70012) Code() string {
+	return "E01A70012"
+}
+
 func (e *PG_E01A70012) CanRetry() bool {
 	return false
 }

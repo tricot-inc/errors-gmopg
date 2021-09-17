@@ -12,6 +12,10 @@ func (e *PG_E01E40008) Message() string {
 	return "認証状態の書式が正しくありません。"
 }
 
+func (e *PG_E01E40008) Code() string {
+	return "E01E40008"
+}
+
 func (e *PG_E01E40008) CanRetry() bool {
 	return false
 }

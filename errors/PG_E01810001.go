@@ -12,6 +12,10 @@ func (e *PG_E01810001) Message() string {
 	return "磁気ストライプ区分が不正です。"
 }
 
+func (e *PG_E01810001) Code() string {
+	return "E01810001"
+}
+
 func (e *PG_E01810001) CanRetry() bool {
 	return false
 }
