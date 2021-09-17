@@ -1,17 +1,17 @@
 // Code generated from gen-error/main.go; DO NOT EDIT
 package errors
 
-type PG_E01300001 struct{
+type PG_E01300001 struct {
 }
 
 func (e *PG_E01300001) Error() string {
-    return "入力パラメータエラー 設定を確認してください。"
+	return "入力パラメータエラー 設定を確認してください。"
 }
 
 func (e *PG_E01300001) Message() string {
-    return "HTTP_USER_AGENTが指定されていません。"
+	return "HTTP_USER_AGENTが指定されていません。"
 }
 
 func (e *PG_E01300001) CanRetry() bool {
-    return false
+	return false
 }

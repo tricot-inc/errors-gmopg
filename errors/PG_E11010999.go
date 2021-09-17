@@ -1,17 +1,17 @@
 // Code generated from gen-error/main.go; DO NOT EDIT
 package errors
 
-type PG_E11010999 struct{
+type PG_E11010999 struct {
 }
 
 func (e *PG_E11010999) Error() string {
-    return "取引エラー すでに取引が完了している可能性があります。"
+	return "取引エラー すでに取引が完了している可能性があります。"
 }
 
 func (e *PG_E11010999) Message() string {
-    return "特になし"
+	return "特になし"
 }
 
 func (e *PG_E11010999) CanRetry() bool {
-    return false
+	return false
 }

@@ -1,10 +1,12 @@
 package main
 
 import (
+	"bytes"
 	_ "embed"
 	"encoding/json"
 	"flag"
 	"fmt"
+	"go/format"
 	"log"
 	"os"
 	"strings"
@@ -48,13 +50,24 @@ func main() {
 	}
 
 	for _, error := range jsonData {
+
+		var tmp bytes.Buffer
+		err = t.Execute(&tmp, error)
+		if err != nil {
+			log.Fatal(err)
+		}
+
+		formated, err := format.Source(tmp.Bytes())
+		if err != nil {
+			log.Fatal(err)
+		}
+
 		f, err := os.Create(fmt.Sprintf("errors/PG_%s.go", error.ErrorCode))
 		if err != nil {
 			log.Fatal(err)
 		}
 
-		err = t.Execute(f, error)
-		if err != nil {
+		if _, err := f.Write(formated); err != nil {
 			f.Close()
 			log.Fatal(err)
 		}

@@ -1,17 +1,17 @@
 // Code generated from gen-error/main.go; DO NOT EDIT
 package errors
 
-type PG_E01270006 struct{
+type PG_E01270006 struct {
 }
 
 func (e *PG_E01270006) Error() string {
-    return "入力パラメータエラー 再入力をカード所有者に依頼してください。"
+	return "入力パラメータエラー 再入力をカード所有者に依頼してください。"
 }
 
 func (e *PG_E01270006) Message() string {
-    return "支払回数の数字以外の文字が含まれています。"
+	return "支払回数の数字以外の文字が含まれています。"
 }
 
 func (e *PG_E01270006) CanRetry() bool {
-    return false
+	return false
 }
