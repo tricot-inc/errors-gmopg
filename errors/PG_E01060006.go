@@ -4,10 +4,14 @@ package errors
 type PG_E01060006 struct{
 }
 
-func (e *PG_E01060006) Error() string{
+func (e *PG_E01060006) Error() string {
     return "入力パラメータエラー 設定を確認してください。"
 }
 
-func (e *PG_E01060006) Message() string{
+func (e *PG_E01060006) Message() string {
     return "利用金額に数字以外の文字が含まれています。"
+}
+
+func (e *PG_E01060006) CanRetry() bool {
+    return false
 }

@@ -17,6 +17,7 @@ type Data struct {
 	ErrorCode    string      `json:"error_code"`
 	ErrorDetail  string      `json:"error_detail"`
 	ErrorMessage string      `json:"error_message"`
+	Retryable    bool        `json:"retryable"`
 }
 
 //go:embed error_template.txt

@@ -4,10 +4,14 @@ package errors
 type PG_E11310003 struct{
 }
 
-func (e *PG_E11310003) Error() string{
+func (e *PG_E11310003) Error() string {
     return "リンク決済エラー リトライ回数オーバー"
 }
 
-func (e *PG_E11310003) Message() string{
+func (e *PG_E11310003) Message() string {
     return "この取引はリンク決済を実行できません。"
+}
+
+func (e *PG_E11310003) CanRetry() bool {
+    return false
 }

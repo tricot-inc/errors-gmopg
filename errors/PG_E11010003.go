@@ -4,10 +4,14 @@ package errors
 type PG_E11010003 struct{
 }
 
-func (e *PG_E11010003) Error() string{
+func (e *PG_E11010003) Error() string {
     return "取引エラー 決済を中止して、取引ができない事を通知してください。"
 }
 
-func (e *PG_E11010003) Message() string{
+func (e *PG_E11010003) Message() string {
     return "この取引は指定処理区分処理を行う事ができません。"
+}
+
+func (e *PG_E11010003) CanRetry() bool {
+    return false
 }

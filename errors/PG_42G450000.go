@@ -4,10 +4,14 @@ package errors
 type PG_42G450000 struct{
 }
 
-func (e *PG_42G450000) Error() string{
+func (e *PG_42G450000) Error() string {
     return "カード会社オーソリエラー 指定されたカードのオーソリが失敗した事を通知してください。"
 }
 
-func (e *PG_42G450000) Message() string{
+func (e *PG_42G450000) Message() string {
     return "セキュリティーコードが入力されていない為に、決済を完了する事ができませんでした。"
+}
+
+func (e *PG_42G450000) CanRetry() bool {
+    return false
 }

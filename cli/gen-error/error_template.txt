@@ -4,10 +4,14 @@ package errors
 type PG_{{.ErrorCode}} struct{
 }
 
-func (e *PG_{{.ErrorCode}}) Error() string{
+func (e *PG_{{.ErrorCode}}) Error() string {
     return "{{.ErrorDetail}}"
 }
 
-func (e *PG_{{.ErrorCode}}) Message() string{
+func (e *PG_{{.ErrorCode}}) Message() string {
     return "{{.ErrorMessage}}"
+}
+
+func (e *PG_{{.ErrorCode}}) CanRetry() bool {
+    return {{.Retryable}}
 }

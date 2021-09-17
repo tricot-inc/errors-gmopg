@@ -4,10 +4,14 @@ package errors
 type PG_E01850008 struct{
 }
 
-func (e *PG_E01850008) Error() string{
+func (e *PG_E01850008) Error() string {
     return "更新区分 更新区分の書式が正しくありません。"
 }
 
-func (e *PG_E01850008) Message() string{
+func (e *PG_E01850008) Message() string {
     return "更新区分の書式が正しくありません。"
+}
+
+func (e *PG_E01850008) CanRetry() bool {
+    return false
 }

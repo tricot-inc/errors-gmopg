@@ -4,10 +4,14 @@ package errors
 type PG_E01870008 struct{
 }
 
-func (e *PG_E01870008) Error() string{
+func (e *PG_E01870008) Error() string {
     return "トークンタイプの書式が正しくありません。"
 }
 
-func (e *PG_E01870008) Message() string{
+func (e *PG_E01870008) Message() string {
     return "トークンタイプの書式が正しくありません。"
+}
+
+func (e *PG_E01870008) CanRetry() bool {
+    return false
 }

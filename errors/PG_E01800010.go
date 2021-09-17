@@ -4,10 +4,14 @@ package errors
 type PG_E01800010 struct{
 }
 
-func (e *PG_E01800010) Error() string{
+func (e *PG_E01800010) Error() string {
     return "入力パラメータエラー 設定を確認してください。"
 }
 
-func (e *PG_E01800010) Message() string{
+func (e *PG_E01800010) Message() string {
     return "暗証番号は利用できません。"
+}
+
+func (e *PG_E01800010) CanRetry() bool {
+    return false
 }

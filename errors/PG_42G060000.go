@@ -4,10 +4,14 @@ package errors
 type PG_42G060000 struct{
 }
 
-func (e *PG_42G060000) Error() string{
+func (e *PG_42G060000) Error() string {
     return "カード会社オーソリエラー 指定されたカードのオーソリが失敗した事を通知してください。"
 }
 
-func (e *PG_42G060000) Message() string{
+func (e *PG_42G060000) Message() string {
     return "デビットカードで口座の残高が不足しています。"
+}
+
+func (e *PG_42G060000) CanRetry() bool {
+    return false
 }
