@@ -1,0 +1,13 @@
+// Code generated from gen-error/main.go; DO NOT EDIT
+package errors
+
+type PG_{{.ErrorCode}} struct{
+}
+
+func (e *PG_{{.ErrorCode}}) Error() string{
+    return "{{.ErrorDetail}}"
+}
+
+func (e *PG_{{.ErrorCode}}) Message() string{
+    return "{{.ErrorMessage}}"
+}
