@@ -25,14 +25,21 @@ type Data struct {
 //go:embed error_template.txt
 var templateTxt string
 
+//go:embed constructor_template.txt
+var constructorTxt string
+
+//go:embed constructor_case_template.txt
+var constructorCaseTxt string
+
 const (
-	templateFilePath = "error_template.txt"
-	jsonFilePath     = "errors.json"
+	jsonFilePath = "errors.json"
 )
 
 func main() {
 	flag.Parse()
-	t := template.Must(template.New("error_template").Parse(templateTxt))
+	errorTemplate := template.Must(template.New("error_template").Parse(templateTxt))
+	constructorTemplate := template.Must(template.New("constructor_template").Parse(constructorTxt))
+	caseTemplate := template.Must(template.New("constructor_case_template").Parse(constructorCaseTxt))
 
 	jsonData := make([]*Data, 0)
 
@@ -49,10 +56,12 @@ func main() {
 		log.Fatal(err)
 	}
 
+	var allCaseBuffer bytes.Buffer
+
 	for _, error := range jsonData {
 
 		var tmp bytes.Buffer
-		err = t.Execute(&tmp, error)
+		err = errorTemplate.Execute(&tmp, error)
 		if err != nil {
 			log.Fatal(err)
 		}
@@ -62,17 +71,45 @@ func main() {
 			log.Fatal(err)
 		}
 
-		f, err := os.Create(fmt.Sprintf("errors/PG_%s.go", error.ErrorCode))
+		errorfile, err := os.Create(fmt.Sprintf("errors/PG_%s.go", error.ErrorCode))
 		if err != nil {
 			log.Fatal(err)
 		}
 
-		if _, err := f.Write(formated); err != nil {
-			f.Close()
+		if _, err := errorfile.Write(formated); err != nil {
+			errorfile.Close()
 			log.Fatal(err)
 		}
 
-		f.Close()
+		err = caseTemplate.Execute(&allCaseBuffer, error)
+		if err != nil {
+			log.Fatal(err)
+		}
+
+		errorfile.Close()
 	}
 
+	var tmp bytes.Buffer
+	allCase := string(allCaseBuffer.Bytes())
+	err = constructorTemplate.Execute(&tmp, allCase)
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	constructorFile, err := os.Create("errors/errors.go")
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	formated, err := format.Source(tmp.Bytes())
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	if _, err := constructorFile.Write(formated); err != nil {
+		constructorFile.Close()
+		log.Fatal(err)
+	}
+
+	constructorFile.Close()
 }
