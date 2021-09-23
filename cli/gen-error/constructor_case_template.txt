@@ -1,0 +1,2 @@
+case "{{.ErrorCode}}":
+    errs = append(errs, &PG_{{.ErrorCode}}{})
